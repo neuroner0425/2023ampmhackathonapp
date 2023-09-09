@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/code_taxi_mate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/taxi_mate_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/search"/>
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/profile"/>
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/taxi_mate_horizontalscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taxi_mate_linearlayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+                <Button
+                    android:id="@+id/Departure"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="출발지"
+                    android:textSize="18sp"
+                    android:background="@drawable/rounded_button_background"
+                    android:layout_centerHorizontal="true" />
+                <Spinner
+                    android:id="@+id/Departure_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/Departure"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+                <Button
+                    android:id="@+id/Arrival"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="도착지"
+                    android:textSize="18sp"
+                    android:background="@drawable/rounded_button_background"
+                    android:layout_centerHorizontal="true"/>
+                <Spinner
+                    android:id="@+id/Arrival_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/Arrival"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/taxi_mate_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/taxi_mate_horizontalscrollview"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

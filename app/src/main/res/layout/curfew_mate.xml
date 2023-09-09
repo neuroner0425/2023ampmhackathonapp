@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/code_curfew_mate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/room_mate_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/search"/>
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/profile"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/curfew_mate_horizontalscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/room_mate_linearlayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/pyeonghwa"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:text="평화관"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_background"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/daedong"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:text="대동관"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_background"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/chambicc"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:text="참빛관"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_background"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/saebicc"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:text="새빛관"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_background"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/hanbicc"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:text="한빛관"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_background"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/changui"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:text="창의관"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_background"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/hyemin"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:text="혜민관"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_background"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/curfew_mate_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/curfew_mate_horizontalscrollview"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

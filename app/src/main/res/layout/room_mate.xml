@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/code_room_mate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/room_mate_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/search"/>
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/profile"/>
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/room_mate_horizontalscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/room_mate_linearlayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+                <Button
+                    android:id="@+id/Domitory"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="기숙사"
+                    android:textSize="18sp"
+                    android:background="@drawable/rounded_button_background"
+                    android:layout_centerHorizontal="true" />
+                <Spinner
+                    android:id="@+id/Domitory_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/Domitory"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+                <Button
+                    android:id="@+id/Class"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="학번"
+                    android:textSize="18sp"
+                    android:background="@drawable/rounded_button_background"
+                    android:layout_centerHorizontal="true"/>
+                <Spinner
+                    android:id="@+id/Class_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/Class"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+                <Button
+                    android:id="@+id/Gender"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="성별"
+                    android:textSize="18sp"
+                    android:background="@drawable/rounded_button_background"
+                    android:layout_centerHorizontal="true"/>
+                <Spinner
+                    android:id="@+id/Gender_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/Gender"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/MBTI"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="MBTI"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_background"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/smoking"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:text="흡연여부"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_background"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/room_mate_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/room_mate_horizontalscrollview"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
